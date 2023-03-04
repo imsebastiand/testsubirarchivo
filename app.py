@@ -14,6 +14,8 @@ import pandas as pd
 
 app = dash.Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div([
     dcc.Upload(
         id='upload-data',
